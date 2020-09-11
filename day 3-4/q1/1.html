@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center><h1>Ass_day4</h1></center>
+<center><p>Q.1 img and 3 button</p><center>
+<br><center><img id="myImg" src="" alt="img" width="650" height="450" ></center><br>
+
+
+<center>
+<button class="myButton" onclick="myFunction1()">image1</button>
+<button class="myButton" onclick="myFunction2()">image2</button>
+<button class="myButton" onclick="myFunction3()">image3</button></center>
+
+<script>
+function myFunction1() {
+  document.getElementById("myImg").src = "img1.jpg";
+}
+function myFunction2() {
+  document.getElementById("myImg").src = "img2.jpg";
+}
+function myFunction3() {
+  document.getElementById("myImg").src = "img3.jpg";
+}
+</script>
+
+<style>
+  body{
+    background-color: #415989;
+  }
+  #myImg{
+    
+    border: 10px solid transparent;
+    border-color: #ffffff;
+    border-style: groove;
+  }
+.myButton {
+	box-shadow:inset 0px 0px 15px 3px #23395e;
+	background:linear-gradient(to bottom, #2e466e 5%, #415989 100%);
+	background-color:#2e466e;
+	border-radius:17px;
+	border:1px solid #1f2f47;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Arial;
+	font-size:15px;
+	padding:6px 13px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #263666;
+}
+.myButton:hover {
+	background:linear-gradient(to bottom, #415989 5%, #2e466e 100%);
+	background-color:#415989;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+</style>
+</body>
+</html>
